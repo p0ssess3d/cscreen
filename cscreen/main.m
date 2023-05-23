@@ -750,7 +750,7 @@ size_t displayBitsPerPixel(CGDirectDisplayID displayId) {
 
 size_t displayBitsPerPixelFromMode(CGDisplayModeRef mode) {
 	
-	size_t depth = 0;
+	/* size_t depth = 0;
 	
 	CFStringRef pixEnc = CGDisplayModeCopyPixelEncoding(mode);
 	if(CFStringCompare(pixEnc, CFSTR(IO32BitDirectPixels), kCFCompareCaseInsensitive) == kCFCompareEqualTo)
@@ -759,8 +759,8 @@ size_t displayBitsPerPixelFromMode(CGDisplayModeRef mode) {
         depth = 16;
     else if(CFStringCompare(pixEnc, CFSTR(IO8BitIndexedPixels), kCFCompareCaseInsensitive) == kCFCompareEqualTo)
         depth = 8;
-    
-    return depth;
+    */
+    return 32;
 }
 
 void printDisplayLineForMode (CGDirectDisplayID disid, CGDisplayModeRef dismode, int displayIndex) {
